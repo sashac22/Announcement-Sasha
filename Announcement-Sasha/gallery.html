@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/gallery.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Sofia?selection.family=Open+Sans|Princess+Sofia|Sofia">
+	<title></title>
+	
+
+
+
+	<header>
+
+		<div id="logo">
+			<a href="index.html"><img src="images/smlogo.png" alt="logo" width="150" height="150"></a>
+		</div>
+
+ 	</header>
+
+</head>
+<body>
+	<ul>
+		<li><a href="index.html"><img src="images/moon.jpg"></a></li>
+		<li><a href="about.html"><img src="images/green.jpg"></a></li>
+		<li><a href="videos.html"><img src="images/blue.jpg"></a></li>
+		<li><a href="gallery.html"><img src="images/red.jpg"></a></li>
+		<li><a href="links.html"><img src="images/yellow.jpg"></a></li>
+	</ul>
+
+
+
+<h1> SAILOR MOON </h1>
+<h3>Sailor Moon and her Sailor Guardians fight to protect the universe from forces of evil and total annihilation.</h3>
+<article>
+
+
+<h2 class="slideshow">Manual Slideshow</h2>
+
+<div class="slideshow slideshow-container">
+  <img class="mySlides" src="images/1.jpg" style="width:15% height:10%">
+  <img class="mySlides" src="images/2.jpg" style="width:15% height:10%">
+  <img class="mySlides" src="images/3.png" style="width:15% height:10%">
+  <img class="mySlides" src="images/4.jpg" style="width:15% height:10%">
+  <img class="mySlides" src="images/5.jpg" style="width:15% height:10%">
+  <img class="mySlides" src="images/6.jpg" style="width:15% height:10%">
+  <img class="mySlides" src="images/8.jpg" style="width:15% height:10%">
+  <img class="mySlides" src="images/9.gif" style="width:15% height:10%">
+  <img class="mySlides" src="images/10.gif" style="width:15% height:10%">
+  <img class="mySlides" src="images/11.gif" style="width:15% height:10%">
+  <img class="mySlides" src="images/12.jpg" style="width:15% height:10%">
+  
+
+  <button class="slideshow-button slideshow-black slideshow-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slideshow-button slideshow-black slideshow-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
+
+<footer>
+	
+	<p>Webpage Created by An Awesome Loser</p>
+
+</footer>
+
+<!-- <audio autoplay loop>
+    <source src="intro.mp3">
+</audio> -->
